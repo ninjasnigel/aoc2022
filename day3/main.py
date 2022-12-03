@@ -21,8 +21,7 @@ def sol():
 
     sol2val = 0
     for i in range(0,len(sacks),3):
-        common = list(set(sacks[i]) & set(sacks[i+1]) & \
-                                          set(sacks[i+2]))
+        common = list(set(sacks[i]) & set(sacks[i+1]) & set(sacks[i+2]))
         sol2val += lettersvalue(common)
 
     print('sol1', sol1val)
